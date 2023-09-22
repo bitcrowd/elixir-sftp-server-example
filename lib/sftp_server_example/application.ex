@@ -7,6 +7,8 @@ defmodule SFTPServerExample.Application do
 
   @impl true
   def start(_type, _args) do
+    SFTPServerExample.start()
+
     children = [
       # Starts a worker by calling: SFTPServerExample.Worker.start_link(arg)
       # {SFTPServerExample.Worker, arg}
